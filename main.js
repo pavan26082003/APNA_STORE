@@ -55,3 +55,14 @@ fetch("https://fakestoreapi.com/products?limit=8")
     console.error("Error fetching products:", error);
     productGrid.innerHTML = "<p>Unable to load products right now.</p>";
   });
+
+
+
+//   --------------------------------
+
+  const toggle = document.getElementById('menu-toggle');
+  const navLinks = document.getElementById('nav-links');
+
+  toggle.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
